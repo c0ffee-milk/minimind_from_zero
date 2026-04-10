@@ -7,6 +7,8 @@ from transformers.activations import ACT2FN
 from typing import Optional, Tuple, List, Union
 from transformers import PreTrainedModel, GenerationMixin, PretrainedConfig
 from transformers.modeling_outputs import CausalLMOutputWithPast
+from transformers.modeling_outputs import MoeCausalLMOutputWithPast
+
 
 class MiniMindConfig(PretrainedConfig):
     model_type = "minimind"
