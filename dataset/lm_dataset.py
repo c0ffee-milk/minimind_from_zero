@@ -25,3 +25,5 @@ class PretrainDataset(Dataset):
         labels = input_ids.clone()
         labels[input_ids == self.tokenizer.pad_token_id] = -100
         return input_ids, labels
+
+
